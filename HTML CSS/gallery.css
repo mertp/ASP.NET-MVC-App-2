@@ -1,0 +1,24 @@
+body{
+    background-image: url("bird_background2.jpg");
+    
+ }
+
+#title1{
+    text-align: center;
+    font-family: fantasy;
+    background-color: rgb(0, 46, 46);
+    color:white;
+    }
+    .container{
+        margin-top: 8%;
+       
+    }  
+    .inner{
+        overflow: hidden;
+    }
+    .inner img{
+        transition: all 3s ease;
+    }
+    .inner:hover{
+        transform: scale(1.4);
+    }

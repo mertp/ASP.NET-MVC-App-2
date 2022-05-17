@@ -1,0 +1,70 @@
+body{
+background-image: url("images/bird_background2.jpg");
+
+}
+#title1{
+text-align: center;
+font-family: fantasy;
+background-color: rgb(0, 46, 46);
+color:white;
+}
+.navbar-nav{
+    margin-left: auto;
+}
+.numbers {
+    font-family: 'Arial', sans-serif;
+    font-size: 150px;
+    line-height: 1em;
+    text-align: center;
+    margin: 40px auto;
+    overflow: hidden;
+  }
+  .numbers__window {
+    display: inline-block;
+    overflow: hidden;
+    width: 0.5em;
+    height: 1em;
+  }
+  .numbers__window__digit {
+    font: inherit;
+    word-break: break-all;
+    display: block;
+    width: 0;
+    padding: 0 0.52em 0 0;
+    margin: 0 auto;
+    overflow: inherit;
+    animation: counting 0.2s steps(15) forwards infinite;
+  }
+  .numbers__window__digit::before {
+    content: attr(data-fake);
+    display: inline-block;
+    width: 100%;
+    height: auto;
+  }
+  @keyframes counting {
+    100% {
+      transform: translate3d(0, -10em, 0);
+    }
+  }
+  .numbers__window__digit--1 {
+    animation-iteration-count: 3;
+  }
+  .numbers__window__digit--2 {
+    animation-iteration-count: 6;
+  }
+  .numbers__window__digit--3 {
+    animation-iteration-count: 9;
+  }
+  .numbers__window__digit--4 {
+    animation-iteration-count: 12;
+  }
+  .numbers__window__digit--5 {
+    animation-iteration-count: 15;
+  }
+  #birdtext{
+      text-align: center;
+      font-size: 35px;
+      text-shadow: 10px;
+    
+  }
+  
